@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Example</title>
-    <style>
-        .box {
-            width: 300px;
-            height: 150px;
-            margin: 40px; /* light green */
-            border: 15px solid darkpurple; /* dark purple */
-            padding: 30px; /* light yellow */
-            background-color: lightpink; /* light pink actual content */
-        }
-        body {
-            background-color: lightgray; /* Optional to visualize margin */
-        }
-    </style>
-</head>
 <body>
 
-    <div class="box">
-        Actual Content
-    </div>
+    <h1>CSS Margin</h1>
+    <br>
+    <p>La propiedad margin en CSS controla el espacio exterior de un elemento. Crea espacio entre el elemento y los elementos que lo rodean. Los márgenes son totalmente transparentes y no afectan el fondo ni el borde del elemento.
 
+    Los márgenes se pueden establecer individualmente para cada lado (por ejemplo, margin-top, margin-right).
+    Se pueden usar valores como auto, px, %, em, entre otros, para definir los márgenes.</p>
+
+    <h1>CSS Padding</h1>
+    <br>
+    <p>La propiedad padding controla el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento y su borde. El padding aumenta el espacio interno alrededor del contenido, sin afectar el margen ni el borde.
+
+    Al igual que los márgenes, el padding se puede definir de manera individual para cada lado (por ejemplo, padding-top, padding-right).
+    El padding se agrega dentro del borde, pero fuera del contenido.</p>
+
+    <h1>CSS Border</h1>
+    <br>
+    <p>La propiedad border crea un borde alrededor de un elemento. Va entre el padding y el margen. El borde puede tener un estilo, ancho y color específicos.
+
+    Los estilos de borde incluyen solid (sólido), dashed (guiones), dotted (punteado), etc.
+    Puedes personalizar el ancho, el color y el tipo del borde en cada lado.</p>
+
+    <h1>CSS Width and Height</h1>
+    <br>
+    <p>Las propiedades width (ancho) y height (alto) definen las dimensiones del área de contenido de un elemento (sin incluir el padding, borde o margen, a menos que uses la propiedad box-sizing).
+
+    Por defecto, el ancho y el alto se aplican al contenido (sin incluir padding o borde).
+    Puedes establecer estas dimensiones en varias unidades como px, %, em, vw, etc.</p>
 </body>
 </html>
