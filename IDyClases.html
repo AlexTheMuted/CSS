@@ -1,0 +1,52 @@
+<p>
+
+Diferencias entre clases (class) e identificadores (id):
+
+Uso en HTML:
+
+Clases (class): Se pueden asignar a múltiples elementos en un documento HTML. Esto permite reutilizar el mismo estilo en varios elementos. Además, un mismo elemento HTML puede tener más de una clase.
+  
+Identificadores (id): Deben ser únicos en el documento, es decir, un identificador solo puede asignarse a un único elemento HTML en la página. Solo puede haber un id con el mismo valor en toda la página.
+
+Se usa una clase (class) cuando:
+
+El estilo necesita aplicarse a varios elementos.
+Se va a reutilizar el mismo estilo en distintos elementos.
+Un elemento puede necesitar combinar múltiples estilos.
+Se usa un identificador (id) cuando:
+
+Necesitas identificar un elemento único en la página.
+Estás trabajando con JavaScript y necesitas seleccionar un único elemento.
+Solo un elemento en particular necesita tener un estilo diferente
+  
+</p>
+
+<p>
+
+<h3>Especificidad:</h3>
+
+Un id tiene más peso o prioridad que una clase. La especificidad de un id es mayor que la de una clase, por lo que si ambos se aplican al mismo elemento, el estilo del id prevalecerá.
+
+Ejemplo de conflicto: Si tienes un elemento con tanto id como class y ambos aplican diferentes colores, el color del id será el que se muestre.
+
+<h4>css</h4>
+.miClase {
+    color: red;
+}
+
+#miId {
+    color: blue;
+}
+<h4>En HTML:</h4>
+html
+<p id="miId" class="miClase">identificador</p>
+En este caso, el texto será azul, ya que el id tiene mayor especificidad.
+
+<h3>Reutilización:</h3>
+
+Las clases son reutilizables y se pueden asignar a varios elementos.
+Los identificadores son únicos y no deben repetirse en el documento.
+  
+</p>
+
+<p> La principal diferencia entre clases e identificadores en CSS es que las clases se pueden reutilizar en múltiples elementos, mientras que los identificadores son únicos y solo deben asignarse a un solo elemento en una página. Las clases se usan para aplicar estilos comunes a varios elementos, mientras que los identificadores son para estilos o comportamientos específicos en un solo elemento. Ejemplo: Usarías una clase .btn para dar el mismo estilo a todos los botones de la web, pero un id como #header para dar un estilo único al encabezado principal.</p>
