@@ -1,34 +1,34 @@
 .titulo {
-    font-size: 32px; /* Cambiar tamaño de fuente */
-    color: #2c3e50;  /* Color del texto */
+    font-size: 32px; 
+    color: #2c3e50;  
     text-align: center;
     margin-top: 20px;
-    font-family: 'Georgia', serif; /* Cambiar la fuente */
+    font-family: 'Georgia', serif; 
 }
 
 /* Estilo para los párrafos con el id #destacado */
 #destacado {
-    background-color: #f1c40f; /* Color de fondo */
-    color: #2c3e50;            /* Color del texto */
+    background-color: #f1c40f; 
+    color: #2c3e50;            
     padding: 10px;
-    border-radius: 5px;        /* Bordes redondeados */
-    margin: 15px 0;            /* Márgenes alrededor */
+    border-radius: 5px;       
+    margin: 15px 0;            
 }
 
 /* Estilo común para los párrafos con la clase .contenido */
 .contenido {
     font-size: 16px;
-    color: #34495e;  /* Color del texto */
-    margin: 20px;    /* Margen alrededor */
-    line-height: 1.6; /* Altura de línea para mejorar legibilidad */
+    color: #34495e;  
+    margin: 20px;    
+    line-height: 1.6; 
     font-family: 'Arial', sans-serif;
 }
 
 /* Sobrescribir el estilo del párrafo con la clase .contenido y el id #especial */
 #especial {
-    background-color: #e74c3c;  /* Fondo diferente */
-    color: white;               /* Color del texto */
-    border: 2px solid #c0392b;   /* Borde alrededor */
+    background-color: #e74c3c;  
+    color: white;              
+    border: 2px solid #c0392b;  
     padding: 10px;
-    border-radius: 5px;          /* Bordes redondeados */
+    border-radius: 5px;          
 }
