@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h1 class="titulo">Titulo</h1>
+    <h1 class="titulo">Uso Combinado de ID y Clases en CSS</h1>
 
     <p id="destacado">Este es el primer párrafo. Usar el mismo ID más de una vez es un error en HTML.</p>
     <p id="destacado">Este es el segundo párrafo.</p>
@@ -16,6 +16,9 @@
     <p class="contenido">Este es el tercer párrafo de contenido.</p>
 
     <p class="contenido" id="especial">Este párrafo tiene la clase "contenido" y el ID "especial".</p>
+
+    <p class="contenido">Los id deben ser únicos: En HTML, los id están diseñados para ser identificadores únicos dentro de un documento. Cada elemento en una página debe tener un id exclusivo, lo que permite que los navegadores, JavaScript y otros sistemas los identifiquen y manejen de manera precisa. </p>
+    <p class="contenido" id="especial">Los navegadores aplicarán ambas reglas, pero cuando las propiedades entran en conflicto (por ejemplo, si tanto el id como la clase intentan definir el mismo estilo, como el color de fondo), el estilo del id sobrescribirá el de la clase debido a su mayor especificidad.</p>
 
 </body>
 </html>
