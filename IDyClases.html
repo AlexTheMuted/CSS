@@ -1,52 +1,54 @@
-<p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejemplo de página HTML</title>
+    <style>
+        /* Estilos para el título */
+        #titulo {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-Diferencias entre clases (class) e identificadores (id):
+        /* Estilos para los párrafos */
+        .texto {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            color: #555;
+            margin: 15px;
+        }
 
-Uso en HTML:
+        /* Estilos para el botón */
+        .boton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-Clases (class): Se pueden asignar a múltiples elementos en un documento HTML. Esto permite reutilizar el mismo estilo en varios elementos. Además, un mismo elemento HTML puede tener más de una clase.
-  
-Identificadores (id): Deben ser únicos en el documento, es decir, un identificador solo puede asignarse a un único elemento HTML en la página. Solo puede haber un id con el mismo valor en toda la página.
+        .boton:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
 
-Se usa una clase (class) cuando:
+    <!-- Título -->
+    <h1 id="titulo">Bienvenido a mi página web</h1>
 
-El estilo necesita aplicarse a varios elementos.
-Se va a reutilizar el mismo estilo en distintos elementos.
-Un elemento puede necesitar combinar múltiples estilos.
-Se usa un identificador (id) cuando:
+    <!-- Párrafos -->
+    <p class="texto">Este es el primer párrafo de ejemplo para esta página. Aquí puedes escribir el contenido que desees.</p>
+    <p class="texto">Este es el segundo párrafo. Asegúrate de que todos los párrafos compartan la misma clase.</p>
+    <p class="texto">Finalmente, este es el tercer párrafo. Todos están diseñados de manera uniforme gracias a la clase común.</p>
 
-Necesitas identificar un elemento único en la página.
-Estás trabajando con JavaScript y necesitas seleccionar un único elemento.
-Solo un elemento en particular necesita tener un estilo diferente
-  
-</p>
+    <!-- Botón -->
+    <button class="boton" id="botonEnviar">Enviar</button>
 
-<p>
-
-<h3>Especificidad:</h3>
-
-Un id tiene más peso o prioridad que una clase. La especificidad de un id es mayor que la de una clase, por lo que si ambos se aplican al mismo elemento, el estilo del id prevalecerá.
-
-Ejemplo de conflicto: Si tienes un elemento con tanto id como class y ambos aplican diferentes colores, el color del id será el que se muestre.
-
-<h4>css</h4>
-.miClase {
-    color: red;
-}
-
-#miId {
-    color: blue;
-}
-<h4>En HTML:</h4>
-html
-<p id="miId" class="miClase">identificador</p>
-En este caso, el texto será azul, ya que el id tiene mayor especificidad.
-
-<h3>Reutilización:</h3>
-
-Las clases son reutilizables y se pueden asignar a varios elementos.
-Los identificadores son únicos y no deben repetirse en el documento.
-  
-</p>
-
-<p> La principal diferencia entre clases e identificadores en CSS es que las clases se pueden reutilizar en múltiples elementos, mientras que los identificadores son únicos y solo deben asignarse a un solo elemento en una página. Las clases se usan para aplicar estilos comunes a varios elementos, mientras que los identificadores son para estilos o comportamientos específicos en un solo elemento. Ejemplo: Usarías una clase .btn para dar el mismo estilo a todos los botones de la web, pero un id como #header para dar un estilo único al encabezado principal.</p>
+</body>
+</html>
